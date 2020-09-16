@@ -1,0 +1,15 @@
+.title{
+    background:linear-gradient(blue,blue), url(../img/banner-3.jpg);
+    height: 100vh;
+    
+    
+    
+}    
+.title h1{
+    color: black;
+font-family: arial black;
+}
+
+.title span {
+    text-transform: uppercase;
+}

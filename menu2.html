@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jq/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        *{box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #ddd
+        
+         }
+         .logo{
+            cursor: pointer;
+            
+            margin-right: auto;
+        }
+         li, a, button{
+             font-family: arial black;
+             font-weight:700 ;
+             font-size: 16px;
+             color: black;
+             text-decoration: none;
+
+         }
+        header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10px;
+        }
+        .nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .nav_links li a{
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color: #f3bc17;
+        }
+        button{
+            padding: 9px 25px;
+            background-color:black; 
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            background-color:#f3bc17;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+        
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="submit">Sing in</button>
+    </header>
+</body>
+</html>

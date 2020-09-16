@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            font-weight: 700;
+            font-size: 30px;
+            color: brown;
+        }
+        img{
+            width: 250px;
+        }
+        img:hover{
+            width: 500px;
+        }
+        p>:last-child{
+            background: aqua;
+        }
+        p>:nth-child(2n){
+            background: brown;
+        }
+        
+        p>:nth-child(2n+1){
+            background:violet;
+        }
+        a:active{
+            color: tomato;
+        }
+        b {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover b {
+  display: block;
+}
+
+body {
+  counter-reset: section;                       /* Set a counter named 'section', and its       initial value is 0. */
+}
+
+p::before {
+  counter-increment: section;                   /* Increment the value of section counter by 1 */
+  content: "crush " counter(section) ": ";    /* Display the word 'Section ', the value of 
+                                                   section counter, and a colon before the content
+                                    
+                                                   of each h3 */
+}
+p::after
+{
+    content: "🧡";
+}
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <input type="email" name="" id="">
+ <img src="img/img1.jpg"  alt="">
+
+
+ <ul>
+     <li><a href="#">he</a> </li>
+     <li><a href="#">be</a></li>
+     <li>ve</li>
+     <li>re</li>
+     <li>te</li>
+     <li>ue</li>
+     <li>ie</li>
+ </ul>
+ <div>Hover over me to show the p element
+    <b>Tada! Here I am!</b>
+  </div>
+  <ul>
+    <p><a href="#">he</a> </p>
+    <p><a href="#">be</a></p>
+    <p>ve</p>
+    <p>re</p>
+    <p>te</p>
+    <p>ue</p>
+    <p>ie</p>
+</ul>
+</body>
+</html>

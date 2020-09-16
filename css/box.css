@@ -1,0 +1,7 @@
+.box{
+    border:6px solid firebrick;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+}

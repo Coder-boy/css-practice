@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /*header-area*/
+         }
+         li, a, button{
+             font-family: arial black;
+             font-weight:700 ;
+             font-size: 16px;
+             color: black;
+             text-decoration: none;
+
+         }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+            list-style: none;
+            background: rgba(0,0,0,0);
+            position: fixed;
+            width: 100%;
+            
+            z-index: 999;
+            transition: 1s;
+            
+        }
+        header.black {
+        background:#100931 ;
+        
+
+        }
+        header.black a {
+        color: white;
+        
+
+        }
+        header.black .new-logo {
+        visibility: hidden;
+        }
+
+       
+        .new-logo{
+            position: absolute;
+        }        
+        header.black button {
+            background-color: #f3bc17 ;
+            color:#100931 ;
+        
+
+        }
+        header.black button:hover {
+            background-color: white ;
+            color:#f3bc17 ;
+        
+
+        }
+        .nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .nav_links li a{
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color: #f3bc17;
+        }
+        button{
+            padding: 9px 25px;
+            background-color:black; 
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            transition: all 0.3s ease 0s;
+            }
+            button:hover{
+                background-color:#f3bc17;
+            }
+
+            /*header-area ends*/
+            .service-area{
+padding: 224px 0 ;
+background: #fff;
+overflow: hidden;
+}
+.service-title{
+     padding: 25px 0;
+     text-align: center;
+}
+.service-title h2{
+    font-size: 35px;
+    color: #293c4d;
+}
+.service-img{ 
+    width: 32%;
+    float: left;
+    overflow: hidden;
+    margin-left: 1%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.service-img:first,
+:nth-child(4){
+    margin-left: 0;
+}
+.service-img img{width: 100%;}
+.service-overlay{
+    width: 100%;
+    height:100% ;
+    background:rgba(34, 53, 67, 0.85);
+    position: absolute;
+    top:100%;
+    left: 0;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    transition: .5s;
+    color :#ECC529 ;
+}
+.service-img:hover .service-overlay{
+top:0;
+
+
+}
+.service-overlay h5{
+    font-size: 30px;
+    
+}
+.service-overlay h5:hover{
+    color: #fff;
+    
+}
+           
+
+    </style>
+    <script type="text/javascript">
+     window.addEventListener("scroll",function () {
+        let MenuArea = document.getElementById('menu-area');
+   
+       if (window.pageYOffset >0) {
+            MenuArea.classList.add("black");
+        } else {
+           MenuArea.classList.remove("black");
+        }
+        
+        
+        
+    });
+    </script>
+</head>
+<body>
+    <header id="menu-area" >
+        <img class="old-logo" src="img/logo 2.png" alt="">
+        <img class="new-logo" src="img/logo.png" alt="">
+        
+        <nav >
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="submit">Sing in</button>
+    </header>
+
+    <section class="service-area" id="Service">
+        <div class="container">
+            <div class="service-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="service-item">
+               <div class="service-img">
+                   <img src="img/img1.jpg" alt="">
+                   <div class="service-overlay">
+                       <h5>Web Design</h5>
+                   </div>
+               </div>
+    
+               <div class="service-img">
+                     <img src="img/img2.jpg" alt="">
+                     <div class="service-overlay">
+                         <h5>Web Development </h5>
+                     </div>
+               </div>
+    
+               <div class="service-img">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="service-overlay">
+                        <h5>Graphic Design</h5>
+                    </div>
+               </div>
+    
+               <div class="service-img">
+                    <img src="img/img4.jpg" alt="">
+                    
+                    <div class="service-overlay">
+                        <h5>SEO</h5>
+                    </div>
+               </div>
+    
+               <div class="service-img">
+                    <img src="img/img5.jpg" alt="">
+                    <div class="service-overlay">
+                        <h5>Affiliate Marketing</h5>
+                    </div>
+               </div>
+    
+                <div class="service-img">
+                    <img src="img/img6.jpg" alt="">
+                    <div class="service-overlay">
+                        <h5>CPA Marketing</h5>
+                    </div>
+                 </div>
+        </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

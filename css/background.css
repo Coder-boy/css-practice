@@ -1,0 +1,11 @@
+.btitle{
+    width: 400px;
+    height:200px ;
+    height:200pxpx ;
+    color: black;
+    border: 2px solid orange;
+    background: linear-gradient(red, yellow );
+    text-align: center;
+    font-size: 50px;
+
+}

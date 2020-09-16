@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            
+        }
+        .box.outer{
+            background-color: coral;
+            margin: 40px;
+        }
+
+        .box.inner{
+            background-color: cyan;
+            transform: scale(0.5)
+        }
+
+        .box.outer2{
+            background-color: coral;
+            margin: 40px;
+        }
+
+        .box.inner2{
+            background-color: cyan;
+            transform: scaleX(0.75)
+        }
+
+        .box.outer3{
+            background-color: coral;
+            margin: 40px;
+        }
+
+        .box.inner3{
+            background-color: cyan;
+            transform: skew(30deg)
+            
+        }
+
+        .box.outer4{
+            background-color: coral;
+            margin: 40px;
+        }
+
+        .box.inner4{
+            background-color: cyan;
+            transform: rotate(45deg)
+            
+        }
+
+        .box.outer5{
+            background-color: coral;
+            margin: 40px;
+        }
+
+        .box.inner5{
+            background-color: cyan;
+            transform: scale(0.75) rotate(45deg)
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box outer">
+        <div class="box inner"></div>
+    </div><br>
+    <div class="box outer2">
+        <div class="box inner2"></div>
+    </div>
+
+    <br>
+    <div class="box outer3">
+        <div class="box inner3"></div>
+    </div>
+    <br>
+    <div class="box outer4">
+        <div class="box inner4"></div>
+    </div>
+
+    <br>
+    <div class="box outer5">
+        <div class="box inner5"></div>
+    </div>
+</body>
+</html>
