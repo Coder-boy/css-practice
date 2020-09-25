@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container2{
+            display: flex;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 10px;
+        }
+        .box-2{
+            position: relative;
+            right: 60px ;
+            bottom: 40px;
+            border: 1px solid black;
+
+        }
+        .box-3{
+            z-index: 1;
+        }
+        .box-4{
+            position: relative;
+            right:60px ;
+            bottom: 40px;
+            border: 1px solid black;
+            
+
+        }
+        .boxx{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            margin: 10px;
+        }
+        .boxx-2{
+            position: absolute;
+            top: 70px;
+            left: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>position relative</h1>
+    <div class="container">
+        <div class="box box-1">
+            <h3>box-1</h3>
+        </div>
+        <div class="box box-2">
+            <h3>box-2</h3>
+        </div>
+        <div class="box box-3">
+            <h3>box-3 z-index</h3>
+        </div>
+        <div class="box box-4">
+            <h3>box-4</h3>
+        </div>
+    </div>
+    <h1>position absolute</h1>
+    <div class="container2">
+        <div class="boxx boxx-1">
+            <h3>box-1</h3>
+        </div>
+        <div class="boxx boxx-2">
+            <h3>box-2</h3>
+        </div>
+        <div class="boxx boxx-3">
+            <h3>box-3</h3>
+        </div>
+        <div class="boxx boxx-4">
+            <h3>box-4</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -12,6 +12,9 @@
             background: black;
             transition: 10s ease-in-out ;
             background-position: top;
+            position: relative;
+            
+    
 
         }
         .box.im {
@@ -25,15 +28,47 @@
 .box:hover{
             background-position: bottom;
 
-        }
+
+}
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+
+    background: rgba(0, 0, 0, 0.58);
+    transform: scaleY(1);
+    transition: transform .5s
+    ;
+}
+.box:hover .details{
+transform: scaleY(0);
+}
+.box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+   
+    text-align: center;
+    cursor: pointer;
+}
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="box im">
+            <div class="details">
+                <div class="content">
+                        <h2>Lorem ipsum</h2> 
+                        <p>dolor sit amet consectetur adipisicing elit. Commodi amet a corrupti quos, voluptatibus porro possimus, iste dignissimos omnis voluptates voluptatum rem minus quam at doloremque numquam perferendis iusto doloribus!</p> 
+                </div>
+            </div>
 
         </div>
+       
     </div>
 </body>
 </html>
